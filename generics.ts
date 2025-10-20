@@ -1,4 +1,5 @@
-function getFirstElement(array: any[]) {
+//A generic function in TypeScript is a function that can work with various data types while maintaining type safety
+function getFirstElement<ElementType>(array: ElementType[]) {
   return array[0];
 }
 const numbers = [1, 2, 3];
