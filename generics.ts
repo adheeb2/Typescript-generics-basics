@@ -12,16 +12,15 @@ const firststring = getFirstElement(strings);
 const map = new Map([["sdf", 3]]);
 map.set("sfd", 2);
 
-type ApiResponse<Data> = {
+type ApiResponse<Data = { status: number }> = {
   data: Data;
   isError: boolean;
 };
 type UserResponse = ApiResponse<{ name: string; age: number }>;
 
-const response: UserResponse = {
+const response: ApiResponse = {
   data: {
-    name: "agent",
-    age: 23,
+    status: 2,
   },
   isError: false,
 };
