@@ -16,8 +16,9 @@ type ApiResponse<Data> = {
   data: Data;
   isError: boolean;
 };
+type UserResponse = ApiResponse<{ name: string; age: number }>;
 
-const response: ApiResponse<{ name: string; age: number }> = {
+const response: UserResponse = {
   data: {
     name: "agent",
     age: 23,
