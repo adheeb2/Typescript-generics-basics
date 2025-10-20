@@ -8,3 +8,19 @@ const firstElement = getFirstElement(numbers);
 
 const strings = ["sdf", "ssddffdg"];
 const firststring = getFirstElement(strings);
+
+const map = new Map([["sdf", 3]]);
+map.set("sfd", 2);
+
+type ApiResponse<Data> = {
+  data: Data;
+  isError: boolean;
+};
+
+const response: ApiResponse<{ name: string; age: number }> = {
+  data: {
+    name: "agent",
+    age: 23,
+  },
+  isError: false,
+};
